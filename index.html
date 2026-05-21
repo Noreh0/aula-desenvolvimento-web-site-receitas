@@ -1,100 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolo de Cenoura</title>
+    <title>Aula BootStrap</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <p>
-            <img src="./assets/images/Bolos-Vovo.svg" alt="Logo Bolos da Vovó">
-            <a href="#">Receita</a>
-            <a href="#">Ingredientes</a>
-            <a href="#">Modo de Preparo</a>
-        </p>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo-senac.png" alt="Logo" width="60" height="30"
+                        class="d-inline-block align-text-top">
+                    Senac Paraná
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section>
-            <h1>Bolo de Cenoura Fofinho</h1>
-            <p>Confira essa clássica receita de bolo de cenoura simples e fácil! O bolo de cenoura é um doce muito popular em nosso país, especialmente no café da manhã e no lanche da tarde. Com sua cobertura de chocolate irresistível e seu interior macio e úmido, ela é uma receita que conquista o coração de todos! Veja com a gente como fazer bolo de cenoura, uma receita prática, preparada com auxílio do liquidificador e perfeita para degustar com um cafezinho!</p>
+            <div class="container">Fixado (centralizado)</div>
+            <div class="container-fluid">Tela inteira</div>
+            <div class="row">
+                <div class="row">
+                    <div class="col">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 coluna-1">Metade</div>
+                    <div class="col-6 coluna-2">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-4 coluna-3">Metade</div>
+                    <div class="col-4 coluna-4">Metade</div>
+                    <div class="col-4 coluna-1">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 coluna-2">Metade</div>
+                    <div class="col-3 coluna-3">Metade</div>
+                    <div class="col-3 coluna-1">Metade</div>
+                    <div class="col-3 coluna-4">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Metade</div>
+                    <div class="col-2">Metade</div>
+                    <div class="col-2">Metade</div>
+                    <div class="col-2">Metade</div>
+                    <div class="col-2">Metade</div>
+                    <div class="col-2">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                    <div class="col-1">Metade</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-4">Metade</div>
+                    <div class="col-8">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">Metade</div>
+                    <div class="col-4">Metade</div>
+                    <div class="col-6">Metade</div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">Item</div>
+                </div>
+            </div>
         </section>
         <section>
-            <h1 id="receitas">Receita de Bolo de Cenoura</h1>
-            <fieldset>
-                <legend>Ingredientes</legend>
-                <h2>Massa</h2>
-                <ul>
-                    <li>1/2 xícara (chá) de óleo</li>
-                    <li>4 ovos</li>
-                    <li>2 e 1/2 xícaras (chá) de farinha de trigo</li>
-                    <li>3 cenouras médias raladas</li>
-                    <li>2 xícaras (chá) de açúcar</li>
-                    <li>1 colher (sopa) de fermento em pó</li>
-                </ul>
-                <h3>Cobertura</h3>
-                <ul>
-                    <li>1 colher (sopa) de manteiga</li>
-                    <li>1 xícara (chá) de açúcar</li>
-                    <li>3 colheres (sopa) de chocolate em pó</li>
-                    <li>1 xícara (chá) de leite</li>
-                </ul>
-                <section>
-                    <h4>Utensílios</h4>
-                    <div>
-                        <p><img src="./assets/images/Mixer.png" alt="Imagem de Batedeira"> Batedeira
-                            <button>Comprar agora</button>
-                        </p>
-                    </div>
-                    <div>
-                        <p><img src="./assets/images/Cake-tin.png" alt="Imagem de Forma de Bolo"> Forma de Bolo
-                            <button>Comprar agora</button>
-                        </p>
-                    </div>
-                    <div>
-                        <p><img src="./assets/images/Blender.png" alt="Imagem de Liquidificador"> Liquidificador
-                            <button>Comprar agora</button>
-                        </p>
-                    </div>
-                    <div>
-                        <p><img src="./assets/images/Dish.png" alt="Imagem de um Prato"> Prato
-                            <button>Comprar agora</button>
-                        </p>
-                    </div>
-                </section>
-            </fieldset>
+            <div class="container position-relative mt-5 zindex">
+
+                <img src="./assets/images/acf.jpg" class="img-fluid imagem-fundo" alt="Imagem de fundo">
+
+                <div class="form-overlay p-4">
+                    <h3 class="titulo-z">Login</h3>
+                    <input type="text" class="form-control mb-2" placeholder="Usuário">
+                    <input type="password" class="form-control mb-2" placeholder="Senha">
+                    <button class="btn btn-primary">Entrar</button>
+                </div>
+            </div>
         </section>
         <section>
-            <h2>Modo de Preparo</h2>
-            <ol>
-                <li>
-                    <h4>Massa</h4>
-                    <ul>
-                        <li>Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture.</li>
-                        <li>Acrescente o açúcar e bata novamente por 5 minutos.</li>
-                        <li>Em uma tigela ou na batedeira, adicione a farinha de trigo e depois misture novamente.</li>
-                        <li>Acrescente o fermento e misture lentamente com uma colher.</li>
-                        <li>Asse em um forno preaquecido a 180° C por aproximadamente 40 minutos.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Cobertura</h4>
-                    <ul>
-                        <li>Despeje em uma tigela a manteiga, o chocolate em pó, o açúcar e o leite, depois misture.
-                        </li>
-                        <li>Leve a mistura ao fogo e continue misturando até obter uma consistência cremosa, depois
-                            despeje
-                            a calda por cima do bolo.</li>
-                    </ul>
-                </li>
-            </ol>
+            <div class="container position-relative mt-5 new-zindex">
+
+                <img src="./assets/images/subaru-acf.jpg" class="img-fluid imagem-fundo" alt="Imagem de fundo">
+                <div class="form-overlay p-4">
+                    <h3 class="titulo-z">Projetos</h3>
+                    <input type="text" class="form-control mb-2" placeholder="Descreva seu projeto">
+                    <input type="email" class="form-control mb-2" placeholder="E-mail">
+                </div>
+
+            </div>
         </section>
     </main>
-    <footer>
-        <dd>Site com direitos reservados aos professores Heron, Leonardo e Christhian</dd>
+    <footer class="rodape">
+        <p>Todos os direitos reservados a Chrystopher, Heron e Leonardo</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
